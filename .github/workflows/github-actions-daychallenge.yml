@@ -1,0 +1,9 @@
+name: GitHub Actions Day Challange
+run-name: ${{ github.actor }} is starting the workflow for the last Day Challange 🚀
+
+on: [push]
+
+jobs:
+  Test-Action:
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
