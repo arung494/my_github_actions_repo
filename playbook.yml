@@ -1,6 +1,7 @@
 ---
 - name: Ansible Playbook
-
+  host: localhost
+  
   tasks:
 
   - name: Testing
