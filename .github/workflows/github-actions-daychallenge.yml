@@ -8,3 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      
+      # 1. Make the workflow check out the code
+      - name: Checkout Ansible Playbook
+        uses: actions/checkout@v2
+
+      # 2. Install python3 and python3 pip on the runner using apt to make sure you have an enviroment that can run ansible
+
+      # 3. Install ansible lint and yamllint using pip the python package manager ) any version should be fine
+
+      # 4. Create a step that runs yamllint on all *. yml files in the directory
+
+      # 5. Create a step that runs ansible lint on all *. yml files in the directory
