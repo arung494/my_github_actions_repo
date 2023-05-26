@@ -6,4 +6,4 @@
 
   - name: Testing
     ansible.builtin.debug:
-       msg "This is to Test the Playbook"
+       msg: "This is to Test the Playbook"
