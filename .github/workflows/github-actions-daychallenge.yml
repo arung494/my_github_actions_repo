@@ -26,5 +26,8 @@ jobs:
           pip3 install yamllint
 
       # 4. Create a step that runs yamllint on all *. yml files in the directory
+      - name: Run yamllint on all *.yml files
+        run: |
+          find . -name "*.yml" -type f -print0 | xargs -0 -I {} yamllint {}
 
       # 5. Create a step that runs ansible lint on all *. yml files in the directory
